@@ -1,0 +1,1076 @@
+================================================================================
+Channel Noise Sensitivity Analysis - 5-Interval Division
+================================================================================
+
+Device: cuda
+
+Experiment Configuration:
+  Division: 5 intervals (20% each)
+  Importance basis: Activation magnitude
+  Noise type: activation
+  Normalized: True
+  Runs per point: 2
+  Test images: 2
+  Metric: ROAD
+
+================================================================================
+Step 1: Loading Tiny-ImageNet Dataset
+================================================================================
+Tiny-ImageNet loaded: 100000 train / 10000 val / 200 classes
+
+================================================================================
+Step 2: Loading Trained ResNet50 Model
+================================================================================
+Loaded trained model from: /home/zjian137/CAMBoost/gradcam/resnet50_tinyimagenet_finetuned.pth
+Target layer: layer4.2.conv3
+Number of channels: 2048
+
+================================================================================
+Step 3: Selecting Test Images
+================================================================================
+Selected 2 test images
+Sample predictions: [0, 0]
+
+================================================================================
+Step 4-6: Running 5-Interval Noise Sensitivity Experiments
+================================================================================
+
+================================================================================
+Processing Image 1/2
+================================================================================
+  Channel division:
+    Interval 1 [0-20%]: 409 channels
+    Interval 2 [20-40%]: 409 channels
+    Interval 3 [40-60%]: 409 channels
+    Interval 4 [60-80%]: 409 channels
+    Interval 5 [80-100%]: 412 channels
+
+  Testing: Interval-1 [0-20%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+ROAD=0.0033
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9971
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+ROAD=0.0032
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9971
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9972
+ROAD=0.0031
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9976
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9971
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+ROAD=0.0031
+
+  Testing: Interval-2 [20-40%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+ROAD=0.0034
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+ROAD=0.0034
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9960
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9971
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9959
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+ROAD=0.0037
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9951
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9952
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9948
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9971
+ROAD=0.0041
+
+  Testing: Interval-3 [40-60%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9959
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+ROAD=0.0034
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9971
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9973
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+ROAD=0.0031
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9961
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9951
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9975
+ROAD=0.0037
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9960
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9955
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9975
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9954
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+ROAD=0.0038
+
+  Testing: Interval-4 [60-80%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+ROAD=0.0034
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+ROAD=0.0033
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9961
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9970
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+ROAD=0.0035
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9974
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9960
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9953
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+ROAD=0.0037
+
+  Testing: Interval-5 [80-100%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+ROAD=0.0033
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+ROAD=0.0034
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9955
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9964
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+ROAD=0.0036
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9953
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9956
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9962
+ROAD=0.0038
+
+  Testing: Baseline
+
+  Testing: Baseline (No Noise)
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+ROAD=0.0033
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9966
+ROAD=0.0032
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9963
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9965
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+ROAD=0.0035
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9969
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9967
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9968
+ROAD=0.0033
+
+  Image 1 complete
+
+================================================================================
+Processing Image 2/2
+================================================================================
+  Channel division:
+    Interval 1 [0-20%]: 409 channels
+    Interval 2 [20-40%]: 409 channels
+    Interval 3 [40-60%]: 409 channels
+    Interval 4 [60-80%]: 409 channels
+    Interval 5 [80-100%]: 412 channels
+
+  Testing: Interval-1 [0-20%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9810
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9821
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9809
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9829
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9817
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9818
+ROAD=0.0183
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9794
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9795
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9797
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9804
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9790
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9795
+ROAD=0.0204
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9710
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9735
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9730
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9802
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9699
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9692
+ROAD=0.0272
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9674
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9593
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9565
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9325
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9605
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9585
+ROAD=0.0442
+
+  Testing: Interval-2 [20-40%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9813
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9799
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9798
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9812
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9811
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9808
+ROAD=0.0193
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9788
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9820
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9792
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9802
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9808
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9828
+ROAD=0.0194
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9750
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9755
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9780
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9788
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9761
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9799
+ROAD=0.0228
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9721
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9674
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9736
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9672
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9702
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9751
+ROAD=0.0291
+
+  Testing: Interval-3 [40-60%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9804
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9819
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9813
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9823
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9808
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9806
+ROAD=0.0188
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9812
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9805
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9804
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9812
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9810
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9821
+ROAD=0.0189
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9822
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9801
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9829
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9841
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9781
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9831
+ROAD=0.0182
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9877
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9870
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9853
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9852
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9843
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9803
+ROAD=0.0150
+
+  Testing: Interval-4 [60-80%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9819
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9801
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9822
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9797
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9804
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9818
+ROAD=0.0190
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9798
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9821
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9807
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9807
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9814
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9814
+ROAD=0.0190
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9763
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9833
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9778
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9771
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9785
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9789
+ROAD=0.0213
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9810
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9806
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9800
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9808
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9793
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9769
+ROAD=0.0202
+
+  Testing: Interval-5 [80-100%]
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9811
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9824
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9811
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9809
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9808
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9813
+ROAD=0.0187
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9821
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9821
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9816
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9830
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9801
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9798
+ROAD=0.0185
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9847
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9841
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9829
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9791
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9824
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9791
+ROAD=0.0179
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9805
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9849
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9832
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9833
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9828
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9805
+ROAD=0.0175
+
+  Testing: Baseline
+
+  Testing: Baseline (No Noise)
+    σ=0.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9823
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9820
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9797
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9818
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9812
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9819
+ROAD=0.0185
+    σ=1.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9797
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9822
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9799
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9808
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9810
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9814
+ROAD=0.0192
+    σ=3.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9826
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9820
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9814
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9809
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9814
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9811
+ROAD=0.0184
+    σ=5.0... Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9810
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9814
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9815
+Running evaluation for p= 0.1
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9809
+Running evaluation for p= 0.3
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9816
+Running evaluation for p= 0.5
+1 1
+Accuracy of the network on test images: 100.0000 %, average probability:  0.9810
+ROAD=0.0188
+
+  Image 2 complete
+
+================================================================================
+Step 7: Computing Statistics Across All Images
+================================================================================
+
+Interval-1 [0-20%]:
+  σ=0.0: ROAD=0.0108±0.0075
+  σ=1.0: ROAD=0.0118±0.0086
+  σ=3.0: ROAD=0.0152±0.0120
+  σ=5.0: ROAD=0.0237±0.0205
+
+Interval-2 [20-40%]:
+  σ=0.0: ROAD=0.0114±0.0080
+  σ=1.0: ROAD=0.0114±0.0080
+  σ=3.0: ROAD=0.0133±0.0095
+  σ=5.0: ROAD=0.0166±0.0125
+
+Interval-3 [40-60%]:
+  σ=0.0: ROAD=0.0111±0.0077
+  σ=1.0: ROAD=0.0110±0.0079
+  σ=3.0: ROAD=0.0110±0.0073
+  σ=5.0: ROAD=0.0094±0.0056
+
+Interval-4 [60-80%]:
+  σ=0.0: ROAD=0.0112±0.0078
+  σ=1.0: ROAD=0.0111±0.0078
+  σ=3.0: ROAD=0.0124±0.0089
+  σ=5.0: ROAD=0.0119±0.0083
+
+Interval-5 [80-100%]:
+  σ=0.0: ROAD=0.0110±0.0077
+  σ=1.0: ROAD=0.0109±0.0076
+  σ=3.0: ROAD=0.0108±0.0072
+  σ=5.0: ROAD=0.0106±0.0068
+
+Baseline:
+  σ=0.0: ROAD=0.0109±0.0076
+  σ=1.0: ROAD=0.0112±0.0080
+  σ=3.0: ROAD=0.0109±0.0075
+  σ=5.0: ROAD=0.0110±0.0078
+
+================================================================================
+Step 8: Generating Visualization
+================================================================================
+Visualization saved: ./results/channel_noise_sensitivity_5intervals_activation.png
+
+================================================================================
+EXPERIMENT SUMMARY
+================================================================================
+
+Key Findings (at σ=5.0):
+--------------------------------------------------------------------------------
+  Interval-1 [0-20%]       : ROAD=0.0237±0.0205
+  Interval-2 [20-40%]      : ROAD=0.0166±0.0125
+  Interval-3 [40-60%]      : ROAD=0.0094±0.0056
+  Interval-4 [60-80%]      : ROAD=0.0119±0.0083
+  Interval-5 [80-100%]     : ROAD=0.0106±0.0068
+  Baseline                 : ROAD=0.0110
+
+Most sensitive interval: Interval-1 [0-20%] (ROAD=0.0237)
+Least sensitive interval: Interval-3 [40-60%] (ROAD=0.0094)
+
+================================================================================
+Experiment Complete!
+================================================================================
+
+Configuration:
+  - Division: 5 intervals (20% each)
+  - Importance basis: Activation magnitude
+  - Test images: 2
+  - Runs per noise level: 2
+
+Results saved to:
+  - ./results/channel_noise_sensitivity_5intervals_activation.png
+
+
