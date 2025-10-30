@@ -57,6 +57,8 @@ def symmetric_quantize(x, bit_width):
 
     This is DETERMINISTIC - same input always produces same output
     This is STRUCTURAL - small values get truncated to 0
+
+    FIX: Use percentile-based scale to avoid outliers dominating
     """
     if bit_width >= 32:
         return x
@@ -65,10 +67,16 @@ def symmetric_quantize(x, bit_width):
     n_levels = 2 ** bit_width
     qmax = n_levels // 2 - 1
 
-    # Per-channel scale
-    scale = x.abs().max() / qmax
+    # FIX: Use 99.9 percentile instead of max to reduce outlier impact
+    # This prevents extreme values from making all other values quantize to 0
+    abs_x = x.abs()
+    scale = torch.quantile(abs_x.flatten(), 0.999) / qmax
 
-    if scale == 0:
+    # Fallback to max if percentile is too small
+    if scale < 1e-8:
+        scale = abs_x.max() / qmax
+
+    if scale == 0 or scale < 1e-8:
         return torch.zeros_like(x)
 
     # Quantize: x -> round(x/scale) -> clamp -> dequantize
